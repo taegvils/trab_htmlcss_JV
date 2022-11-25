@@ -1,0 +1,82 @@
+body{
+    margin:0;
+}
+.container{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows:auto 1fr auto;
+    grid-template-areas:
+     "divCabecalho divCabecalho"
+     "divMenu divConteudo"
+     "divRodape divRodape";
+}
+.cabecalho{
+    grid-area: divCabecalho;
+    background-color:rgb(215, 255, 194);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-image-container{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+#rolo-de-filme{
+    width:auto;
+    height:50%;
+}
+#bandeira-brasil{
+    width:auto;
+    height:75%;
+}
+.menu{
+    grid-area: divMenu;
+    background-color:rgb(225, 255, 172);
+    padding: 20px;
+}
+#menu-menu{
+    margin-bottom: 2px;
+}
+li:hover{
+    color: blue;
+}
+a:visited:hover, a:hover{
+    color: blue;
+}
+ul{
+    margin-top: 2px;
+    list-style-type: square;
+    padding-left: 20px;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.conteudo{
+    grid-area: divConteudo;
+    background-color:rgb(237, 255, 211);
+    padding: 20px;
+}
+h6{
+    margin-top: 5px;
+}
+.rodape{
+    grid-area: divRodape;
+    background-color:rgb(212, 255, 241);
+}
+ /* filmes iconicos*/
+ .descricao-filme{
+    display: flex;
+ }
+ .img-filme{
+    width: auto;
+    height: 20rem;
+ }
+ .texto-filme{
+    margin:10px;
+ }
+ table tr td{
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
